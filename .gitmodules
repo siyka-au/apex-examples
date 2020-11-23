@@ -1,6 +1,6 @@
 [submodule "apex"]
 	path = apex
-	url = https://github.com/apexrtos/apex.git
+	url = git@github.com:siyka-au/apex.git
 [submodule "toybox/src"]
 	path = toybox/src
 	url = https://github.com/landley/toybox.git

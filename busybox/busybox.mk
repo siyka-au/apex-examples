@@ -23,9 +23,6 @@ busybox/.copied:
 
 busybox/busybox: busybox/.config busybox/.copied
 	MAKEFLAGS="$(_MFLAGS)" $(MAKE) -C busybox LD=$(CROSS_COMPILE)ld AR=$(CROSS_COMPILE)gcc-ar $(SHUTUP_IF_SILENT)
-ifneq ($(CONFIG_SSTRIP),)
-	sstrip $@
-endif
 
 busybox/busybox_CLEAN :=
 

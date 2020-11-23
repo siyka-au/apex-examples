@@ -24,9 +24,6 @@ toybox/toybox: toybox/.config toybox/.copied
 		CFLAGS="$(toybox_CFLAGS) -Wundef -Wno-char-subscripts" \
 		CROSS_COMPILE="$(CROSS_COMPILE)" $(SHUTUP_IF_SILENT)
 	chmod 755 $@
-ifneq ($(CONFIG_SSTRIP),)
-	sstrip $@
-endif
 
 toybox/toybox_CLEAN :=
 
